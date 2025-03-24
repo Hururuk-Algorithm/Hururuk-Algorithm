@@ -1,6 +1,6 @@
 <div align="center">
   
-# 🌊 HuruRuk Algorithm 🌊
+# 🌊 Hururuk Algorithm 🌊
 
 <img src="https://github.com/user-attachments/assets/a5b54724-969a-4d4e-9b54-d7736bd2eaab" width="20px;" alt="효림"> <img src="https://github.com/user-attachments/assets/f26ce8fa-8382-4ccd-a2cd-0658fda0003d" width="20px;" alt="유나">
 
