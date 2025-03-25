@@ -7,7 +7,6 @@
 배열의 각 원소는 -100,000부터 100,000 사이의 정수입니다.
 */
 
-const numbers = [1, -5, 2, 4, 3];
 function solution(numbers) {
   return numbers.sort((a, b) => a - b);
 }
