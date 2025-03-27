@@ -23,7 +23,7 @@
 
 // 함수를 구현해 주세요
 function solution(arr) {
-  const setArray = new Set(arr.sort((a, b) => b - a));
+  const setArray = [...new Set(arr.sort((a, b) => b - a))];
   console.log(setArray);
 }
 
