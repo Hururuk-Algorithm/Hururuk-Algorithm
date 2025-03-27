@@ -23,5 +23,5 @@
 
 // 함수를 구현해 주세요
 function solution(arr) {
-  // 여기에 코드를 작성하세요
+  return [...new Set(arr)].sort((a, b) => b - a);
 }
