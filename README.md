@@ -1,11 +1,6 @@
 <div align="center">
-<<<<<<< HEAD
-
-
-=======
   
 
->>>>>>> b31196bb9e3f7b7c75f1fbca4929b7d86069786e
 # 🌊 Hururuk Algorithm 🌊
 
 <img src="https://github.com/user-attachments/assets/a5b54724-969a-4d4e-9b54-d7736bd2eaab" width="20px;" alt="효림"> <img src="https://github.com/user-attachments/assets/f26ce8fa-8382-4ccd-a2cd-0658fda0003d" width="20px;" alt="유나">
@@ -26,42 +21,8 @@
 
 > _"후루룩 마시듯 알고리즘도 빠르게 흡수하자!"_
 
-<<<<<<< HEAD
-<br clear="right"/>
-
-## 🎯 목표
-
-<table>
-  <tr>
-    <td>
-      <ul>
-        <li>자바스크립트/타입스크립트를 활용한 알고리즘 문제 해결 능력 향상</li>
-        <li>코딩테스트 대비 실전 연습</li>
-      </ul>
-    </td>
-    <td>
-      <ul>
-        <li>효율적인 코드 작성 및 최적화 기법 학습</li>
-        <li>서로의 코드를 리뷰하며 다양한 접근 방식 이해</li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
-## 📖 학습 교재
-
-<div align="center">
-  <img src="https://image.aladin.co.kr/product/34193/50/letslook/K102931316_fl.jpg?RS=629&" alt="코딩 테스트 합격자 되기 자바스크립트 편" width="200"/>
-  
-  **「코딩 테스트 합격자 되기: 자바스크립트 편」**
-  
-  *이 책을 바탕으로 주요 알고리즘 개념과 문제 해결 기법을 학습합니다.  
-  책의 예제를 직접 구현하고, 추가 문제를 통해 응용력을 키웁니다.*
-</div>
-=======
 
 <br clear="right"/>
->>>>>>> b31196bb9e3f7b7c75f1fbca4929b7d86069786e
 
 
 ## 🎯 목표
@@ -181,10 +142,7 @@
     </ul>
   </details>
 </div>
-<<<<<<< HEAD
-=======
 
->>>>>>> b31196bb9e3f7b7c75f1fbca4929b7d86069786e
 
 ---
 
@@ -192,10 +150,7 @@
   
 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> b31196bb9e3f7b7c75f1fbca4929b7d86069786e
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:87CEEB,100:4682B4&height=100&section=footer&text=Happy%20Coding!&fontSize=16&fontColor=FFFFFF" width="100%"/>
   
   <sub>Copyright © 2025 HuruRuk Algorithm. All rights reserved.</sub>
