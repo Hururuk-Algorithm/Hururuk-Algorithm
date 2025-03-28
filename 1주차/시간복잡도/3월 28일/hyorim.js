@@ -23,4 +23,17 @@ numbers에서 서로 다른 인덱스에 있는 2개의 수를 뽑아 더해
 */
 
 // 함수를 구현해 주세요
-function solution(numbers) {}
+function solution(numbers) {
+  const arr = [];
+  for (let i = 0; i < numbers.length; i++) {
+    for (let j = 0; j < i; j++) {
+      arr.push(numbers[i] + numbers[j]);
+    }
+  }
+  const sortedARR = [...new Set(arr)].sort((a, b) => a - b);
+  return console.log(sortedARR);
+}
+
+solution([2, 1, 3, 4, 1]);
+solution([5, 0, 2, 7]);
+solution([1, 1, 1, 1]);
