@@ -23,4 +23,19 @@ numbers에서 서로 다른 인덱스에 있는 2개의 수를 뽑아 더해
 */
 
 // 함수를 구현해 주세요
-function solution(numbers) {}
+const arr = [2, 1, 3, 4, 1];
+function solution(numbers) {
+  const newArr = [];
+  for (let i = 0; i < 5; i++) {
+    for (let j = i + 1; j < 5; j++) {
+      newArr.push(numbers[i] + numbers[j]);
+    }
+  }
+  return [...new Set(newArr)].sort((a, b) => a - b);
+}
+console.log(solution(arr));
+
+// 배열에서 두 수를 선택하는 방법
+
+// - 이중 반복문 사용하기(이중 for문)
+// - 조합 알고리즘
