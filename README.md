@@ -1,5 +1,9 @@
 <div align="center">
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> ca72e19b4ce8a68ac60585accbc740340d306da1
 
 # 🌊 Hururuk Algorithm 🌊
 
@@ -23,8 +27,15 @@
 
 > _"후루룩 마시듯 알고리즘도 빠르게 흡수하자!"_
 
+<<<<<<< HEAD
 <br clear="right"/>
 
+=======
+
+<br clear="right"/>
+
+
+>>>>>>> ca72e19b4ce8a68ac60585accbc740340d306da1
 ## 🎯 목표
 
 <table>
@@ -142,12 +153,20 @@
     </ul>
   </details>
 </div>
+<<<<<<< HEAD
+=======
+
+>>>>>>> ca72e19b4ce8a68ac60585accbc740340d306da1
 
 ---
 
 <div align="center">
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ca72e19b4ce8a68ac60585accbc740340d306da1
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:87CEEB,100:4682B4&height=100&section=footer&text=Happy%20Coding!&fontSize=16&fontColor=FFFFFF" width="100%"/>
   
   <sub>Copyright © 2025 HuruRuk Algorithm. All rights reserved.</sub>
