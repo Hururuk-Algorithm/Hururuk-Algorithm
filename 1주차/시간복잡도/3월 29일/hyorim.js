@@ -29,5 +29,59 @@
 */
 
 function solution(answers) {
-  // 여기에 코드를 작성하세요
+  const patterns = [
+    [1, 2, 3, 4, 5],
+    [2, 1, 2, 3, 2, 4, 2, 5],
+    [3, 3, 1, 1, 2, 2, 4, 4, 5, 5],
+  ];
+
+  const scores = [0, 0, 0];
+
+  for (const [i, answer] of answers.entries()) {
+    for (const [j, pattern] of patterns.entries()) {
+      if (answer === pattern[i % pattern.length]) {
+        scores[j] += 1;
+      }
+    }
+  }
+
+  const maxScore = Math.max(...scores);
+
+  const highestScores = [];
+  for (let i = 0; i < scores.length; i++) {
+    if (scores[i] === maxScore) {
+      highestScores.push(i + 1);
+    }
+  }
+  return highestScores;
 }
+
+// 첫 번째 테스트 케이스 실행
+const result1 = solution([1, 2, 3, 4, 5]);
+console.log('첫 번째 테스트 케이스 결과 확인:', result1);
+
+// 두 번째 테스트 케이스 실행
+const result2 = solution([1, 3, 2, 4, 2]);
+console.log('두 번째 테스트 케이스 결과 확인:', result2);
+
+/*
+function solution(answers) {
+  // 수포자들의 패턴
+  const patterns = [
+    [1, 2, 3, 4, 5],
+    [2, 1, 2, 3, 2, 4, 2, 5],
+    [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]
+  ];
+
+  // 각 수포자별로 맞힌 문제 수 계산
+  const scores = patterns.map((pattern, index) => {
+    return answers.filter((answer, i) => answer === pattern[i % pattern.length]).length;
+  });
+
+  // 최대 점수 구하기
+  const maxScore = Math.max(...scores);
+  
+  // 최대 점수를 받은 수포자 찾기
+  return scores.map((score, index) => score === maxScore ? index + 1 : null)
+               .filter(index => index !== null);
+} */
