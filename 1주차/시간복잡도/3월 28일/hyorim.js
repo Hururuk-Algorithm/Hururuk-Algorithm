@@ -37,3 +37,6 @@ function solution(numbers) {
 solution([2, 1, 3, 4, 1]);
 solution([5, 0, 2, 7]);
 solution([1, 1, 1, 1]);
+
+// 배열에서 두 수를 선택하는 방법은 각 수에서 자신보다 뒤에 있는 수를 선택하면 됨
+
