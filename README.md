@@ -1,5 +1,5 @@
 <div align="center">
-  
+
 
 # 🌊 Hururuk Algorithm 🌊
 
@@ -10,8 +10,10 @@
 [![Algorithm](https://img.shields.io/badge/Algorithm-FF6B6B?style=flat-square&logo=theAlgorithms&logoColor=white)](https://github.com/)
 
 ### 자바스크립트 코딩테스트 스터디
+
 #### 2025년 3월 24일 ~ 진행 중
-##### *유르르(홍유나) × 효르르(한효림) = 후루룩!*
+
+##### _유르르(홍유나) × 효르르(한효림) = 후루룩!_
 
 </div>
 
@@ -21,9 +23,7 @@
 
 > _"후루룩 마시듯 알고리즘도 빠르게 흡수하자!"_
 
-
 <br clear="right"/>
-
 
 ## 🎯 목표
 
@@ -143,17 +143,12 @@
   </details>
 </div>
 
-
 ---
 
 <div align="center">
-  
-
-
 
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:87CEEB,100:4682B4&height=100&section=footer&text=Happy%20Coding!&fontSize=16&fontColor=FFFFFF" width="100%"/>
   
   <sub>Copyright © 2025 HuruRuk Algorithm. All rights reserved.</sub>
   
 </div>
-
