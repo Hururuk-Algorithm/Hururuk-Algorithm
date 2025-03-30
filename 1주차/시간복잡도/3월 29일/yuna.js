@@ -27,6 +27,7 @@
 
 
 */
+<<<<<<< HEAD
 const arr = [1, 2, 3, 4, 5];
 function solution(answers) {
   // 객체 형태로 점수와 패턴 저장
