@@ -3,7 +3,7 @@
 
 ## 문제 설명
 
-수포자는 수학을 포기한 사람을 울긋불긋한 표현이다. 수포자 삼인방은 모의고사에 수학 문제를 전부 찍으려 한다. 수포자는 1번 문제부터 마지막 문제까지 다음과 같이 찍는다.
+수포자는 수학을 포기한 사람을 줄인 표현이다. 수포자 삼인방은 모의고사에 수학 문제를 전부 찍으려 한다. 수포자는 1번 문제부터 마지막 문제까지 다음과 같이 찍는다.
 
 * 1번 수포자가 찍는 방식: 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, ...
 * 2번 수포자가 찍는 방식: 2, 1, 2, 3, 2, 4, 2, 5, 2, 1, 2, 3, 2, 4, 2, 5, ...
@@ -27,7 +27,37 @@
 
 
 */
-
+const arr = [1, 2, 3, 4, 5];
 function solution(answers) {
-  // 여기에 코드를 작성하세요
+  // 객체 형태로 점수와 패턴 저장
+  // for문을 돌면서
+  const first = {
+    id: 1,
+    score: 0,
+    pattern: [1, 2, 3, 4, 5],
+  };
+  const second = {
+    id: 2,
+    score: 0,
+    pattern: [2, 1, 2, 3, 2, 4, 2, 5],
+  };
+  const third = {
+    id: 3,
+    score: 0,
+    pattern: [3, 3, 1, 1, 2, 2, 4, 4, 5, 5],
+  };
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] == first.pattern[i] && first.score++;
+    arr[i] == second.pattern[i] && second.score++;
+    arr[i] == third.pattern[i] && third.score++;
+  }
+  const maxScore = Math.max(first.score, second.score, third.score);
+
+  const result = [];
+  if (first.score === maxScore) result.push(first.id);
+  if (second.score === maxScore) result.push(second.id);
+  if (third.score === maxScore) result.push(third.id);
+  return result;
 }
+
+console.log(solution(arr));
