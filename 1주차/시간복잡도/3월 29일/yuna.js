@@ -29,8 +29,6 @@
 */
 const arr = [1, 2, 3, 4, 5];
 function solution(answers) {
-  // 객체 형태로 점수와 패턴 저장
-  // for문을 돌면서
   const first = {
     id: 1,
     score: 0,
@@ -61,3 +59,10 @@ function solution(answers) {
 }
 
 console.log(solution(arr));
+
+// [풀이]
+// 각 수포자의 id, 점수, 찍는 패턴을 객체로 생성하였다.
+// for문을 사용해 정답 배열을 순회하면서 각 수포자의 패턴과 비교하고, 정답과 일치하는 경우 논리 연산자(&&)를 활용하여 해당 수포자의 점수를 증가시켰다.
+// 최종적으로 Math.max를 사용하여 세 수포자 중 최고 점수를 구하고, 각 score와 비교하여 일치하는 id들을 result 배열에 담아 반환하였다.
+
+// [모범 답안]
