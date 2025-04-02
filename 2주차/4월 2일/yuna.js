@@ -41,7 +41,15 @@
  */
 
 function solution(N, stages) {
-  // 여기에 코드를 작성하세요
-
-  return [];
+  const percent = [];
+  for (let i = 1; i <= N; i++) {
+    percent.push([
+      i,
+      (stages.filter((el) => el == i).length /
+        stages.filter((el) => el >= i).length) *
+        100,
+    ]);
+  }
+  const result = percent.sort((a, b) => b[1] - a[1]);
+  return result.map((el) => el[0]);
 }
