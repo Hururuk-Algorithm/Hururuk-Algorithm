@@ -30,7 +30,6 @@
  * result = [3, 4, 2, 1, 5]
  *
  *
- * 따라서 실패율이 높은 순으로 정렬하면: [3, 4, 2, 1, 5]
  *
  * 예제 2)
  * N = 4
@@ -41,7 +40,27 @@
  */
 
 function solution(N, stages) {
-  // 여기에 코드를 작성하세요
+  const challenger = new Array(N + 2).fill(0);
+  for (const stage of stages) {
+    challenger[stage] += 1;
+  }
 
-  return [];
+  const fails = {};
+  let total = stages.length;
+
+  for (let i = 1; i <= N; i++) {
+    if (challenger[i] === 0) {
+      fails[i] = 0;
+      continue;
+    }
+
+    fails[i] = challenger[i] / total;
+    total -= challenger[i];
+  }
+
+  const result = Object.entries(fails).sort((a, b) => b[1] - a[1]);
+  return console.log(result.map((v) => Number(v[0])));
 }
+
+solution(5, [2, 1, 2, 6, 2, 4, 3, 3]);
+solution(4, [4, 4, 4, 4, 4]);
