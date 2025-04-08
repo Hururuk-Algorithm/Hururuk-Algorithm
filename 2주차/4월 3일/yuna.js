@@ -39,15 +39,54 @@
  */
 
 function solution(dirs) {
-  // 여기에 코드를 작성하세요
+  // 방문한 경로를 저장할 Set (문자열 형태로 경로 저장)
+  const visited = new Set();
 
-  // 좌표평면의 경계는 (-5, -5)부터 (5, 5)까지입니다
-  // 캐릭터는 (0, 0)에서 시작합니다
-  // 처음 걸어본 길의 길이만 반환합니다
+  // 현재 위치
+  let x = 0;
+  let y = 0;
 
-  return 0; // 이 부분을 채워 문제를 해결하세요
+  // 방향에 따른 이동 좌표
+  const move = {
+    U: [0, 1],
+    D: [0, -1],
+    R: [1, 0],
+    L: [-1, 0],
+  };
+
+  let count = 0;
+
+  for (const dir of dirs) {
+    // 다음 위치 계산
+    const nx = x + move[dir][0];
+    const ny = y + move[dir][1];
+
+    // 좌표평면 경계 확인 (-5 ~ 5)
+    if (nx < -5 || nx > 5 || ny < -5 || ny > 5) {
+      continue; // 경계를 벗어나면 무시
+    }
+
+    // 경로를 문자열로 표현 (양방향)
+    // 현재 위치에서 다음 위치로 가는 경로
+    const path1 = `${x},${y}->${nx},${ny}`;
+    // 다음 위치에서 현재 위치로 가는 경로 (같은 길로 취급)
+    const path2 = `${nx},${ny}->${x},${y}`;
+
+    // 처음 방문하는 경로인 경우만 카운트
+    if (!visited.has(path1) && !visited.has(path2)) {
+      visited.add(path1);
+      visited.add(path2);
+      count++;
+    }
+
+    // 현재 위치 업데이트
+    x = nx;
+    y = ny;
+  }
+
+  return count;
 }
 
 // 테스트 케이스
-console.log(solution('ULURRDLLU')); // 결과값
-console.log(solution('LULLLLLLU')); // 결과값
+console.log(solution("ULURRDLLU")); // 7
+console.log(solution("LULLLLLLU")); // 7
