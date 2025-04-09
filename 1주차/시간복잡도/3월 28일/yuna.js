@@ -39,3 +39,5 @@ console.log(solution(arr));
 
 // - 이중 반복문 사용하기(이중 for문)
 // - 조합 알고리즘
+
+// 링크: https://school.programmers.co.kr/learn/courses/30/lessons/68644

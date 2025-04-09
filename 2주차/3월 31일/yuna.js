@@ -77,3 +77,5 @@ console.log(solution(arr1, arr2));
 //     ]
 //   )
 // );
+
+// 링크: https://school.programmers.co.kr/learn/courses/30/lessons/12949

@@ -53,3 +53,5 @@ function solution(N, stages) {
   const result = percent.sort((a, b) => b[1] - a[1]);
   return result.map((el) => el[0]);
 }
+
+// 링크: https://school.programmers.co.kr/learn/courses/30/lessons/42889

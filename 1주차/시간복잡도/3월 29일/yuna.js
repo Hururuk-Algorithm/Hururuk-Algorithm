@@ -67,3 +67,5 @@ console.log(solution(arr));
 
 // [모범 답안 풀이]
 // https://velog.io/@ghddbsk12/3-29-%EC%BD%94%EB%93%9C%EC%B9%B4%ED%83%80
+
+// 링크: https://school.programmers.co.kr/learn/courses/30/lessons/42840

@@ -90,3 +90,5 @@ function solution(dirs) {
 // 테스트 케이스
 console.log(solution("ULURRDLLU")); // 7
 console.log(solution("LULLLLLLU")); // 7
+
+// 링크: https://school.programmers.co.kr/learn/courses/30/lessons/49994
