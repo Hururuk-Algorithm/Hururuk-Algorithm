@@ -16,6 +16,7 @@
 
 const sample = 10;
 
+// 그냥 풀기
 function solution(decimal) {
   let number = decimal;
   let rest = "";
@@ -26,3 +27,21 @@ function solution(decimal) {
   return Number(rest);
 }
 console.log(solution(sample));
+
+// stack 사용하기
+
+function solution2(decimal) {
+  const stack = [];
+
+  while (decimal > 0) {
+    const remainder = decimal % 2;
+    stack.push(remainder);
+    decimal = Math.floor(decimal / 2);
+  }
+
+  let binary = "";
+  while (stack.length > 0) {
+    binary += stack.pop();
+  }
+  return binary;
+}
