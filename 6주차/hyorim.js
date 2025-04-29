@@ -48,7 +48,7 @@ function solution(letter) {
   return answer;
 }
 
-//
+// 가위바위보
 function solution(rsp) {
   const win = { 2: '0', 0: '5', 5: '2' };
   var answer = rsp
