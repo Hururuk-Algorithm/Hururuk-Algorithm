@@ -1,64 +1,24 @@
-// 가장 많이 등장한 문자, 가장 적게 등장한 문자
-function solution(str) {
-  const count = {};
-  for (let char of str) {
-    // 실제값
-    count[char] = (count[char] || 0) + 1;
+// 문제 : 프로그래머스 - 전화번호 목록
+
+// 문제 설명
+
+/*
+정수 n을 입력받아 n의 약수를 모두 더한 값을 리턴하는 함수, solution을 완성해주세요.
+*/
+
+// 제약 조건
+// n은 0 이상 3000이하인 정수입니다.
+
+// 입출력 예시
+// | n | return |
+// |----------|--------|
+// | 12	 | 28 |
+// | 5 | 6 |
+
+function solution(n) {
+  let result = n;
+  for (let i = 1; i <= Math.floor(n / 2); i++) {
+    n % i === 0 && (result += i);
   }
-
-  let maxChar = '';
-  let maxCount = 0;
-
-  for (let char in count) {
-    // 인덱스
-    if (count[char] > maxCount) {
-      maxChar = char;
-      maxCount = count[char];
-    }
-  }
-
-  return maxChar;
-}
-
-function solution(str) {
-  const count = {};
-
-  for (let char of str) {
-    count[char] = (count[char] || 0) + 1;
-  }
-
-  let minChar = '';
-  let minCount = Infinity;
-
-  for (let char in count) {
-    if (count[char] < minCount) {
-      minChar = char;
-      minCount = count[char];
-    }
-  }
-
-  return minChar;
-}
-
-solution('banana'); // → "a"
-solution('apple'); // → "p"
-solution('hello'); // → "l"
-
-// 배열 변형 (배열에서 가장 많이 등장한 문자)
-
-function solution(arr) {
-  const count = {};
-  for (let num of arr) {
-    count[num] = (count[num] || 0) + 1;
-  }
-  let maxNum = null;
-  let maxCount = 0;
-
-  for (let num in count) {
-    if (count[num] > maxCount) {
-      maxNum = num;
-      maxCount = count[num];
-    }
-  }
-  return Number(maxNum);
+  return result;
 }
